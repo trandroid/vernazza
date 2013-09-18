@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Vernazza Video Player for Android</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="android,video player,i-frame,key frame,stage fright,mobile,phone,tablet,nexus">
+    <meta name="author" content="Peter Tran">
+
+    <!-- Le styles -->
+    <link href="/static/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="/static/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="/static/bootstrap/css/docs.css" rel="stylesheet">
+    <link href="/static/bootstrap/js/google-code-prettify/prettify.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <!--
+    <link rel="shortcut icon" href="/static/bootstrap/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/static/bootstrap/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/static/bootstrap/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/static/bootstrap/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="/static/bootstrap/ico/apple-touch-icon-57-precomposed.png">
+    -->
+
+    <link type="text/css" rel="stylesheet" href="/static/galleria/themes/classic/galleria.classic.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+    <script src="/static/galleria/galleria-1.2.8.min.js"></script>
+    <script type="text/javascript" src="/static/galleria/themes/classic/galleria.classic.min.js"></script>
+    </head>
+    <body>
+    	<h1>Vernazza Video Player for Android</h1>
+
+    	<h2>Overview</h2>
+    	<p>
+        Vernazza Video Player is a video player for Android phones and tablets. <br/>
+        It allows the user to navigate a video clip by scrolling through a list of key frames. <br/>
+        These key frames are listed at a fixed time interval (default is every 10 seconds).
+    	</p>
+
+    	<h2>Download and Install</h2>
+    	Use one of the following links to download and install the Android package:
+    	<ul>
+    	<li><strong>Stable Release</strong> - 
+		<a href="https://dl.dropbox.com/s/6dz99qnew6d9xdp/Vernazza.apk?dl=1">Vernazza Video Player for Android v0.0.6</a>
+    	</li>
+    	<li><strong>Latest Snapshot</strong> - 
+		<a href="https://dl.dropbox.com/s/fjihxdzcvhbcdvf/Vernazza.apk?dl=1">Vernazza Video Player for Android nightly</a>
+		<br/><em>(warning: nightly build may be unstable)</em>
+    	</li>
+    	</ul>
+
+<h3>Test Video</h3>
+<p>
+Download the following to your device for local playback. <br />
+(Network streaming is not supported yet).
+</p>
+<p>
+        <a href="http://manhdev-vernazza.s3-website-us-west-2.amazonaws.com/v/test/got01.mkv">Test Video #1 (mkv)</a>
+		</br>
+        <a href="http://manhdev-vernazza.s3-website-us-west-2.amazonaws.com/v/test/bat01.mkv">Test Video #2 (mkv)</a>
+</p>
+
+
+    	<h2>Screenshots</h2>
+		<div id="galleria">
+		    <img src="/i/vernazza-06-frame-list-scroll.png" rel="Video player with key frame list on left" />
+		    <img src="/i/vernazza-07-frame-list-touch-01.png" rel="Selecting a key frame causes video player to seek to that position" />
+		    <img src="/i/vernazza-08-frame-list-touch-02.png" rel="" />
+		    <img src="/i/vernazza-02-select.png" rel="" />
+		    <img src="/i/vernazza-04-play-controls.png" rel="" />
+		</div>
+
+<h2>About</h2>
+<p>
+Hi! My name is Peter Tran and I'm a software developer based in San Diego. </br>
+I have a background in Linux device drivers, digital TV and settop boxes. </br>
+I wanted to dive into Android development so Vernazza Video Player was born. </br> 
+</br>
+Send me any questions or commments at <a href="http://twitter.com/manhdev">twitter.com/manhdev</a>. </br>
+</p>
+
+
+		<script type="text/javascript">
+		$('#galleria').galleria({
+			width: 960,
+			height: 540,
+			thumbnails: "numbers",
+			dataConfig: function(img) {
+				// img is now the image element
+				// the function should return an object with the new data
+				return {
+					title: $(img).attr('rel'), // set title
+					description: $(img).attr('rel') // set title
+				};
+			},
+			showInfo: "true"
+		});
+		</script>
+
+		<p>
+		&nbsp;
+		</p>
+
+		<!-- script>
+		    Galleria.loadTheme('/static/galleria/themes/classic/galleria.classic.min.js');
+            Galleria.run('#galleria');
+		</script -->
+    </body>
+</html>

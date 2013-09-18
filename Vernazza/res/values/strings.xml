@@ -1,0 +1,37 @@
+<resources>
+
+    <string name="app_name">Vernazza</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">Vernazza</string>
+    <string name="title_activity_video_player">Vernazza</string>
+    <string name="title_activity_url_dialog">Vernazza</string>
+    <string name="location">Location</string>
+    <string name="cant_read_folder">folder can\'t be read!</string>
+    <string name="nnew">New</string>
+    <string name="select">Select</string>
+    <string name="file_name">File name:</string>
+    <string name="cancel">Cancel</string>
+    <string name="create">Save</string>
+    <string name="no_data">No Data</string>
+    <string name="err">Error</string>
+    <string name="selectToPlay">Play a Video&#8230;</string>
+    <string name="selectToAnalyze">Analyze</string>
+    <string name="loadUrl">Load URL&#8230;</string>
+    <string name="edit_url">URL for streaming</string>
+    <string name="empty">Loading images&#8230;</string>
+    <string name="noTasks">No tasks</string>
+    <string name="random">Random</string>
+    <string name="correct">Correct</string>
+    <string name="play">Play</string>
+    <string name="pause">Pause</string>
+    <string name="reset">Reset</string>
+    <string name="resize">Resize</string>
+    <string name="frame_interval">Frame Interval</string>
+    <string name="VideoView_error_text_invalid_progressive_playback">invalid_progressive_playback</string>
+    <string name="VideoView_error_text_unknown">unknown</string>
+    <string name="VideoView_error_button">button</string>
+    <string name="testVideoUrl">http://manhdev-vernazza.s3-website-us-west-2.amazonaws.com/v/test/got01.mkv</string>
+
+    <color name="gray">#ffff0000</color>
+
+</resources>
